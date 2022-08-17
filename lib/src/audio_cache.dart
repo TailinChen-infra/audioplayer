@@ -156,7 +156,6 @@ class AudioCache {
     bool recordingActive = false,
     bool? duckAudio,
   }) async {
-    print('zzz cache $duckAudio');
     final uri = await load(fileName);
     final player = _player(mode);
     if (fixedPlayer != null) {
